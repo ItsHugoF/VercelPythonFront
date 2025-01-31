@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Personas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="mainHeader">Gestión de Personas</h1>
+
+  <div class="outerLayout">
+   
+    <div class="sectionPane" id="paneLeft">
+      <div class="infoBox">
+        <h2>Listado de Personas</h2>
+        <button id="btnShowAll">Ver Todos</button>
+        <ul id="peopleList"></ul>
+      </div>
+    </div>
+
+    
+    <div class="sectionPane" id="paneCenter">
+      <div class="infoBox">
+        <h2>Registrar Nueva Persona</h2>
+        <form id="formAddPerson">
+          <label for="personId">ID:</label>
+          <input type="text" id="personId" required>
+
+          <label for="personName">Nombre:</label>
+          <input type="text" id="personName" required>
+
+          <label for="personSurname">Apellido:</label>
+          <input type="text" id="personSurname" required>
+
+          <label for="personAge">Edad:</label>
+          <input type="number" id="personAge" required>
+
+          <button type="submit">Registrar</button>
+        </form>
+        <p id="messageAdd"></p>
+      </div>
+    </div>
+
+ 
+    <div class="sectionPane" id="paneRight">
+      <div class="infoBox">
+        <h2>Buscar por ID</h2>
+        <input type="text" id="searchId" placeholder="Ingrese ID aquí">
+        <button id="btnSearchPerson">Buscar</button>
+        <div id="searchOutput"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #EAE7DC; 
+  color: #3C3C3B; 
+}
+
+.mainHeader {
+  text-align: center;
+  background-color: #8E8D8A; 
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.outerLayout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.sectionPane {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.infoBox {
+  background-color: #D8C3A5;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.infoBox h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #3C3C3B;
+}
+
+button {
+  background-color: #5F8D4E; 
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4E7C3D;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #333;
+}
+
+#peopleList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#peopleList li {
+  padding: 8px;
+  border-bottom: 1px solid #bbb;
+}
+
+#peopleList li:last-child {
+  border-bottom: none;
+}
+
+#messageAdd {
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+  color: #B33A3A;
+}
+
+#searchOutput p {
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .outerLayout {
+    flex-direction: column;
+  }
+  .sectionPane {
+    align-items: center;
+  }
+  .infoBox {
+    max-width: 90%;
+  }
+}
