@@ -5,7 +5,7 @@ $(document).ready(function () {
         method: "GET",
         success: function (people) {
           $("#peopleList").empty();
-          people.forEach(function (person) {
+          people.forEach(function (person) {    
             $("#peopleList").append(
               "<li>ID: " + person.id +
               ", Nombre: " + person.nombre +
